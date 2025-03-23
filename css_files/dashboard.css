@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'portfolink';
+    src: url("../font/Eros-Regular.woff") format("woff");
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'portfolink',sans-serif;
+    /* background-color: aqua; */
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+}
+
+#main>video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+
+}
+
+
+
+
+#page1{
+    height: 100vh;
+    padding: 3vw;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 3;
+    gap:1vw;
+}
+
+
+#portfolink-dashboard-heading{
+    text-align: right;
+    font-size: 8vw;
+    width: 55vw;
+    color: rgb(255, 255, 255);
+    line-height: 8vw;
+}
+
+#logout{
+    margin-bottom: 2vw !important;
+    letter-spacing: 0.3vw;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    background-color: rgba(240, 248, 255, 0);
+    border: solid 1px #ffffff;
+    border-radius: 3vw;
+    -webkit-border-radius: 3vw;
+    -moz-border-radius: 3vw;
+    -ms-border-radius: 3vw;
+    -o-border-radius: 3vw;
+    padding: 0.5vw 2.5vw;
+    font-size: 2vw;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    
+}
+
+
+
+
+#logout:hover{
+    background-color: #ffffff;
+    color: black;
+
+}
+
+#page2{
+
+    height: 100vh;
+    padding: 3vw;
+    background-color: rgba(255, 255, 255, 0.479);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding-top: 3vw;
+}
+
+#page2 >h4{
+    font-size: 5vw;
+    color: white;
+    margin-top: 7vw;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin: 20px;
+    margin-top: 5vw;
+}
+
+
+.class-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 16vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.class-card:hover{
+    background-color: transparent;
+    color: white;
+    
+}
+.class-card:hover p{
+    color: rgb(233, 232, 232);
+}
+
+.class-card h3 {
+    margin: 0 0 10px;
+    font-size: 3.2vw;
+}
+.class-card p {
+    margin: 0;
+    font-size: 1vw;
+    color: #555;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}

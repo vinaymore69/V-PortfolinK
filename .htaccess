@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirect requests like portfolio/{roll_no} to portfolio.php?roll_no={roll_no}
+RewriteRule ^portfolio/([0-9A-Za-z]+)$ portfolio.php?roll_no=$1 [L,QSA]

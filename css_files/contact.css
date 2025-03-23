@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'portfolink';
+    src: url("../font/Eros-Regular.woff") format("woff");
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'portfolink',sans-serif;
+    /* background-color: aqua; */
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+}
+
+#main>video{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+
+}
+
+
+
+
+#page1{
+    min-height: 100vh;
+    padding: 3vw;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+}
+
+
+#page1 > .portfolink-contact-form{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding: 1vw;
+    margin-right: 4vw;
+}
+#page1> .portfolink-contact-form > h2{
+    margin-top: 10vw;
+    font-size: 5vw;
+    color: aliceblue;
+}
+#page1 > .portfolink-contact-form > form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    gap: 1vw;
+    margin-top: 5vw;
+    align-items: flex-start;
+}
+
+#page1 > .portfolink-contact-form > form > label{
+
+    font-size: 3vw;
+    color: white;
+
+}
+
+#page1 > .portfolink-contact-form > form > input{
+    height: 4vw;
+    width: 100%;
+    border-radius: 0vw;
+    background: transparent;
+    font-size: 2vw;
+    color: aliceblue;
+    -webkit-border-radius: 0vw;
+    -moz-border-radius: 0vw;
+    -ms-border-radius: 0vw;
+    -o-border-radius: 0vw;
+    border: solid 1px rgba(255, 255, 255, 0.482);
+    padding-left: 1vw;
+}
+
+#page1 > .portfolink-contact-form > form > textarea{
+    height: 20vw;
+    width: 100%;
+    border-radius: 0vw;
+    background: transparent;
+    font-size: 2vw;
+    color: aliceblue;
+    -webkit-border-radius: 0vw;
+    -moz-border-radius: 0vw;
+    -ms-border-radius: 0vw;
+    -o-border-radius: 0vw;
+    border: solid 1px rgba(255, 255, 255, 0.482);
+    padding: 1vw;
+    resize: none    ;
+}
+
+#page1 > .portfolink-contact-form > form > button{
+
+    width: auto;
+    font-size: 2.3vw;
+    padding: 0.3vw 3vw;
+    border-radius: 2.5vw;
+    -webkit-border-radius: 2.5vw;
+    -moz-border-radius: 2.5vw;
+    -ms-border-radius: 2.5vw;
+    -o-border-radius: 2.5vw;
+    cursor: pointer;
+    border: solid thin white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#page1 > .portfolink-contact-form > form >button:hover{
+
+    background-color: transparent;
+    color: white;
+
+}

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'portfolink';
+    src: url("../font/Eros-Regular.woff") format("woff");
+}
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    
+    /* background-color: aqua; */
+}
+
+
+#main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* position: relative; */
+    font-family: 'portfolink',sans-serif;
+    /* background-color: aqua; */
+}
+
+
+
+#page1{
+    min-height: 60vh;
+    padding: 3vw;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 3;
+    gap: 2vw;
+}
+
+
+#page1 > img {
+    margin-top: 1.6vw;
+    width: 35vw;
+    height: 40vw;
+    object-fit: cover;
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(100%);
+    
+    position: sticky;
+    top: 4.5vw; /* Adjust this value as needed */
+    z-index: 2; /* Ensure it's above other elements if necessary */
+}
+
+#portfolink-main-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#portfolink-main-content>h1{
+    font-size: 5vw;
+    text-align: center;
+    text-wrap: wrap;
+    /* background-color: aqua; */
+}
+
+#portfolink-main-content>h6{
+
+/* color: aqua; */
+display: flex;
+width: 32vw;
+justify-content: space-between;
+gap: 2vw;
+}
+#portfolink-main-content h6 span {
+    font-family: 'Poppins', sans-serif !important;
+}
+#portfolink-main-content > h6 > span {
+    /* font-family: 'poppins', sans-serif !important; */
+    font-size: 1vw;
+    font-weight: 350;
+    letter-spacing: 2px;
+}
+#portfolink-about{
+   
+    width: 40vw;
+    /* font-family: 'poppins', sans-serif !important; */
+    /* background-color: aqua; */
+}
+
+#portfolink-about>h4{
+    margin-top: 1vw;
+    font-size: 2.2vw;
+    font-weight: 900;
+    /* font-family: 'poppins', sans-serif !important; */
+
+}
+#portfolink-about>p{
+    font-family: 'poppins', sans-serif !important;
+    margin-top: 1vw;   
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+#portfolink-about>h4>span{
+font-family: 'poppins', sans-serif !important;
+ 
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+
+
+#portfolink-skills-certifications{
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* background-color: aqua; */
+    margin-top: 1vw;
+}
+#portfolink-skills,#portfolink-certifications{
+    display: flex;
+    width: 46%;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* background-color: black; */
+    
+
+}
+#portfolink-skills>h4,#portfolink-certifications>h4{
+    font-size: 2.2vw;
+
+}
+#portfolink-skills>ul,#portfolink-certifications>ul{
+    margin-top: 1vw;
+}
+#portfolink-skills>ul>li,#portfolink-certifications>ul>li{
+    display: flex;
+    font-family: 'poppins';
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+#portfolink-certifications{
+    padding-left: 4vw;
+    border-left: 1px solid rgba(89, 89, 89, 0.379);
+}
+
+
+#portfolink-projects {
+    /* margin-top: 0.5vw; */
+    width: 40vw;
+    /* background-color: aqua; */
+    padding: 2vw;
+    border-radius: 10px;
+   
+}
+
+/* Section heading */
+#portfolink-projects h4 {
+    font-size: 2.5vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+    
+}
+
+/* Unordered list */
+#portfolink-projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* Strong elements (Titles: Project Title, Description, Technologies) */
+#portfolink-projects ul li strong {
+    display: block;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #333333bc;
+    /* margin-bottom: 0.5vw; */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Paragraphs inside list items */
+#portfolink-projects ul li p {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #222;
+    /* margin-bottom: 1vw; */
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Socials Section Container */
+#portfolink-socials {
+    /* margin-top: 2vw; */
+    width: 40vw;
+    /* background-color: #f4f4f4; */
+    padding: 2vw;
+    border-radius: 10px;
+    
+    /* text-align: center; */
+}
+
+/* Heading */
+#portfolink-socials h4 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+
+/* Social List */
+#portfolink-socials ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    gap: 2vw;
+}
+
+/* List Items */
+#portfolink-socials ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Links */
+#portfolink-socials ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: #22222294;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+#portfolink-socials ul li a:hover {
+    color: #0077b5; /* LinkedIn Blue */
+}
+
+/* FontAwesome Icons */
+#portfolink-socials ul li a i {
+    font-size: 2vw;
+    margin-right: 0.5vw;
+}
+
+/* GitHub Hover Color */
+#portfolink-socials ul li:nth-child(2) a:hover {
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #portfolink-socials {
+        width: 80vw;
+    }
+    
+    #portfolink-socials h4 {
+        font-size: 4vw;
+    }
+
+    #portfolink-socials ul {
+        flex-direction: column;
+    }
+
+    #portfolink-socials ul li a {
+        font-size: 2.5vw;
+    }
+
+    #portfolink-socials ul li a i {
+        font-size: 3vw;
+    }
+}

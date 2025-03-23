@@ -1,0 +1,122 @@
+      /* PortfolinK Font & Reset */
+      @font-face {
+        font-family: 'portfolink';
+        src: url("../font/Eros-Regular.woff") format("woff");
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'portfolink', sans-serif;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+    #main > video {
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+    }
+
+    #page1{
+        height: 100vh;
+        padding: 3vw;
+        font-size: 2vw;
+        /* background-color: blue; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 3;
+        gap:1vw;
+    }
+
+    #feed-data {
+        position: relative;
+        z-index: 3;
+        width: 40vw;
+        background-color: rgba(255, 255, 255, 0.115);
+        backdrop-filter: blur(8px);
+        padding: 2vw;
+        border-radius: 1vw;
+        margin: 10vh auto;
+    }
+    #feed-data header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2vw;
+    }
+    #feed-data header h2 {
+        font-size: 2.5vw;
+        color: #ffffff;
+    }
+    /* Logout button using same style as dashboard */
+    #feed-data header a#logout {
+        letter-spacing: 0.3vw;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        background-color: rgba(240, 248, 255, 0);
+        border: 1px solid #ffffff;
+        border-radius: 3vw;
+        padding: 0.5vw 2.5vw;
+        font-size: 1.5vw;
+        transition: all 0.5s ease-in-out;
+    }
+    #feed-data header a#logout:hover {
+        background-color: #ffffff;
+        color: black;
+    }
+    /* Form styles */
+    #feed-data form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+    #feed-data form label {
+        font-size: 2.2vw;
+        color: #ffffff;
+        margin-bottom: 0.5vw;
+    }
+    #feed-data form input[type="file"] {
+        padding: 0.8vw;
+        font-size: 1vw;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    #feed-data form button {
+        background: transparent;
+        color: #fff;
+        width: wrap;
+        border: solid 1px #ffffff;
+        padding: 1vw 2vw;
+        font-size: 1.5vw;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        font-weight: 900;
+        transition: background 0.3s;
+        -webkit-border-radius: 0.5vw;
+        -moz-border-radius: 0.5vw;
+        -ms-border-radius: 0.5vw;
+        -o-border-radius: 0.5vw;
+}
+    #feed-data form button:hover {
+        background: #fff;
+        color: black;
+        font-weight: 900;
+    }
+    /* Message styling */
+    .message {
+        background: #e7f3fe;
+        border: 1px solid #b3d7ff;
+        padding: 1vw;
+        margin-bottom: 2vw;
+        border-radius: 0.5vw;
+        color: #31708f;
+        font-size: 1vw;
+    }
