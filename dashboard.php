@@ -44,8 +44,8 @@ try {
     <!-- Your existing CSS files -->
     <link rel="stylesheet" href="css_files/dashboard.css">
     <link rel="stylesheet" href="css_files/menu.css">
+    <link rel="stylesheet" href="css_files/footer.css">
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
- 
 </head>
 <body>
     <div id="main">
@@ -61,19 +61,19 @@ try {
         </nav>
         <!-- Navbar end -->
 
+        <!-- Page 1: Welcome Section -->
         <div id="page1">
             <h1 id="portfolink-dashboard-heading">
                 Welcome to the Dashboard, <?php echo htmlspecialchars($_SESSION['username']); ?>!
             </h1>
-
-            <!-- Button to go to feedData.php (Above Logout) -->
-            <a href="feedData.php" id="logout" style="margin-bottom: 1vw;">Go to Feed Data &nbsp; <span class="material-symbols-outlined">
+            <!-- Button to go to feedData.php -->
+            <a href="feedData.php" id="logout" style="margin-bottom: 1vw;">Go to Feed Data &nbsp;<span class="material-symbols-outlined">
 post_add
 </span></a>
-
             <a href="logout.php" id="logout">Logout&nbsp;<span class="material-symbols-outlined">logout</span></a>
         </div>
 
+        <!-- Page 2: Class Overview -->
         <div id="page2">
             <h4>Class Overview</h4>
             <?php if (isset($error)): ?>
@@ -93,16 +93,31 @@ post_add
                     <p>No class data available.</p>
                 <?php endif; ?>
             </div>
-
-            <!-- Button to go to feedData.php (Below Class Overview) -->
-            <div class="feed-data-button-container">
-                <a href="feedData.php" class="feed-data-button">Go to Feed Data</a>
-            </div>
-
         </div>
 
-    </div>
+        <!-- Page 3: Generate Portfolio PDF -->
+        <div id="page3" style="background-color: rgba(255, 255, 255, 0.1); padding: 2vw; margin: 2vw auto; width: 90vw; z-index:5; displayposition:  relative; border-radius: 1vw; text-align: center;">
+            <h4 style="font-size: 3vw; color: #fff;">Generate Portfolio PDF</h4>
+            <!-- Placeholder button. Further functionality can be added here -->
+            <button id="generate-pdf" style="font-size: 2vw; padding: 1vw 2vw; margin-top: 1vw;">Generate PDF</button>
+        </div>
 
+    
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+            <h3>PortfolinK &copy; 2025</h3>
+            <h4>Copyright © 2025 Vinay Prakash More ®</h4>
+        </div>
     <script src="javascript_files/script.js"></script>
+
+    <script>
+           document.addEventListener("DOMContentLoaded", function() {
+            const generateBtn = document.getElementById("generate-pdf");
+            generateBtn.addEventListener("click", function() {
+                window.location.href = "generatePdf.php";
+            });
+        });
+    </script>
 </body>
 </html>
