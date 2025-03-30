@@ -20,7 +20,7 @@ PortfolinK is a web-based platform that allows students to manage and display th
 ## Installation & Setup
 ### 1. Clone the Repository
 ```bash
- git clone https://github.com/yourusername/PortfolinK.git
+ git clone https://github.com/vinaymore69/V-PortfolinK.git
  cd PortfolinK
 ```
 
