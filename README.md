@@ -1,3 +1,5 @@
+![PortfolinK Screenshot](https://github.com/vinaymore69/V-PortfolinK/blob/main/images_file/V-PortfolinK.png)
+
 # PortfolinK - Student Portfolio PDF Generator
 
 ## Description
@@ -63,4 +65,3 @@ Vinay Prakash More
 
 ## License
 This project is licensed under the MIT License.
-
