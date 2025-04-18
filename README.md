@@ -1,6 +1,6 @@
 ![PortfolinK Screenshot](https://github.com/vinaymore69/V-PortfolinK/blob/main/images_file/V-PortfolinK.png)
 
-# PortfolinK - Student Portfolio PDF Generator
+# PortfolinK - Student Portfolio & Portfolio PDF Generator
 
 ## Description
 PortfolinK is a web-based application designed to help administrators generate structured PDF portfolios for students. The application retrieves student details, including their skills, projects, certifications, extracurricular activities, and achievements, and formats them into a professional PDF document using TCPDF.
